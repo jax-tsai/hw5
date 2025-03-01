@@ -1,0 +1,61 @@
+{
+    "product": {
+      "Category": [
+        {
+          "Name": "Pant",
+          "Item": [
+            {
+              "Name": "short",
+              "Description": "short pant",
+              "Price": "$20"
+            },
+            {
+              "Name": "Woman's Jean",
+              "Description": "Jean for woman",
+              "Price": "$60"
+            },
+            {
+              "Name": "Sweatpants",
+              "Description": "Comfy pants for relaxation",
+              "Price": "$45"
+            }
+          ]
+        },
+        {
+          "Name": "T-Shirt",
+          "Item": [
+            {
+              "Name": "Dog T-Shirt",
+              "Description": "100% Cotton T-shirt size S-2XL",
+              "Price": "$20"
+            },
+            {
+              "Name": "Cat T-shirt",
+              "Description": "Cat theme T-shirt size S-2XL",
+              "Price": "$300"
+            }
+          ]
+        },
+        {
+          "Name": "Jacket",
+          "Item": [
+            {
+              "Name": "Cat hoodie",
+              "Description": "Cat pattern hoodie size S-2XL",
+              "Price": "$70"
+            },
+            {
+              "Name": "Trench Coat",
+              "Description": "Long jacket",
+              "Price": "$300"
+            },
+            {
+              "Name": "Fleece Jacket",
+              "Description": "Warm heavy weight fleece jacket",
+              "Price": "$150"
+            }
+          ]
+        }
+      ]
+    }
+}

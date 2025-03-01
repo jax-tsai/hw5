@@ -1,0 +1,12 @@
+
+Category{
+    display:block;
+    color:#888888;
+    font-family: 'Courier New', Courier, monospace;
+    padding-top: 10px;
+    text-align: center;
+ }
+ Item{
+    display:block;
+    color:#888888;
+ }
