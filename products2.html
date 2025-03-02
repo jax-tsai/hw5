@@ -37,6 +37,7 @@
                 }
             }
             function processJson(obj) {
+                console.log(obj);
                 var items = obj.product.Item;
                 for (let i =0; i < items.length; i++) {
                     processItem(items[i]);
