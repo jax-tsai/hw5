@@ -1,54 +1,59 @@
 <?xml-stylesheet type="text/css" href="products.css"?>
 <product>
-    <Category>
-        <Name>Pant</Name>
-        <Item>
-            <Name>short</Name>
-            <Description>short pant</Description>
-            <Price>$20</Price>
-        </Item>
-        <Item>
-            <Name>Woman's Jean</Name>
-            <Description>Jean for woman</Description>
-            <Price>$60</Price>
-        </Item>  
-        <Item>
-            <Name>Sweatpants</Name>
-            <Description>Comfy pants for relaxation</Description>
-            <Price>$45</Price>
-        </Item>
-    </Category> 
-       
-    <Category>
-        <Name>T-Shirt</Name>
-        <Item>
-            <Name>Dog T-Shirt</Name>
-            <Description>100% Cotton T-shirt size S-2XL</Description>
-            <Price>$20</Price>
-        </Item>
-        <Item>
-            <Name>Cat T-shirt</Name>
-            <Description>Cat theme T-shirt size S-2XL</Description>
-            <Price>$300</Price>
-        </Item>
-    </Category>   
-
-    <Category>
-        <Name>Jacket</Name>
-        <Item>
-            <Name>Cat hoodie</Name>
-            <Description>Cat pattern hoodie size S-2XL</Description>
-            <Price>$70</Price>
-        </Item>
-        <Item>
-            <Name>Trench Coat</Name>
-            <Description>Long jacket</Description>
-            <Price>$300</Price>
-        </Item>
-        <Item>
-            <Name>Fleece Jacket</Name>
-            <Description>Warm heavy weight fleece jacket</Description>
-            <Price>$150</Price>
-        </Item>
-    </Category>     
+	<Item>
+		<Name>Woman's Short</Name>
+		<Description>short pant for woman</Description>
+		<Price>$20</Price>
+		<Category>Pant</Category>
+	</Item>
+	<Item>
+		<Name>Woman's Jean</Name>
+		<Description>Jean for woman</Description>
+		<Price>$60</Price>
+		<Category>Pant</Category>
+	</Item>
+	<Item>
+		<Name>Sweatpants</Name>
+		<Description>Comfy pants for relaxation</Description>
+		<Price>$45</Price>
+		<Category>Pant</Category>
+        <Category>Winter Clothing</Category>      
+	</Item>
+	<Item>
+		<Name>Ski Pant</Name>
+		<Description>Water proof pants for skiing</Description>
+		<Price>$150</Price>
+		<Category>Pant</Category>
+		<Category>Winter Clothing</Category>        
+	</Item>
+	<Item>
+		<Name>Dog T-Shirt</Name>
+		<Description>100% Cotton T-shirt size S-2XL</Description>
+		<Price>$20</Price>
+		<Category>T-Shirt</Category>
+	</Item>
+	<Item>
+		<Name>Cat T-shirt</Name>
+		<Description>Cat theme T-shirt size S-2XL</Description>
+		<Price>$300</Price>
+		<Category>T-Shirt</Category>
+	</Item>
+	<Item>
+		<Name>Cat hoodie</Name>
+		<Description>Cat pattern hoodie size S-2XL</Description>
+		<Price>$70</Price>
+		<Category>Winter Clothing</Category>
+	</Item>
+	<Item>
+		<Name>Trench Coat</Name>
+		<Description>Long jacket</Description>
+		<Price>$300</Price>
+		<Category>Winter Clothing</Category>
+	</Item>
+	<Item>
+		<Name>Fleece Jacket</Name>
+		<Description>Warm heavy weight fleece jacket</Description>
+		<Price>$150</Price>
+		<Category>Winter Clothing</Category>
+	</Item>
 </product>
