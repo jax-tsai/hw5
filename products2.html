@@ -48,6 +48,7 @@
                 $('#button').on('click', function() {
 
                         $.get('products.json', function(data) {
+                            console.log(data);
                             processJson(data);
 
                             $('#result').html(data); 
