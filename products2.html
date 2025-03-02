@@ -1,25 +1,83 @@
 <!DOCTYPE html>
 <html>
-
     <head>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> 
         <script>
+
+            function getKey(name) {
+                if (name == "Price") {
+                    return "Price: ";
+                } else if (name == "Category") {
+                    return "Categories: ";
+                }
+                return "";
+            }
+            function processLine(name, value) {
+                var result = document.getElementById("result");
+                var newDiv = document.createElement('div');
+                newDiv.classList.add(name == 'Name'? 'Name': "Description");
+                newDiv.innerHTML = getKey(name) + value;
+                result.appendChild(newDiv);
+            }
+
+
+
+            function getValue(value) {
+                if (Array.isArray(value)) {
+                    return value.join(', ');
+                } 
+                return value;
+            }
+
+            function processItem(item) {
+                var result = document.getElementById("result");
+                const keys = Object.keys(item);
+                for (let i =0; i < keys.length; i++) {
+                    processLine(keys[i], getValue(item[keys[i]]));
+                }
+            }
+            function processJson(obj) {
+                var items = obj.product.Item;
+                for (let i =0; i < items.length; i++) {
+                    processItem(items[i]);
+                }
+
+            }
+
             $(document).ready(function(){
                 $('#button').on('click', function() {
-                    $.get('products.json', function(data) {
-                        console.log(data);
 
-                    // You can further process the data here, e.g., display it on the page
-                    $('#result').html(data); 
-                    }, 'json');
+                        $.get('products.json', function(data) {
+                            processJson(data);
+
+
+                            // You can further process the data here, e.g., display it on the page
+                            $('#result').html(data); 
+                        }, 'json');
+
                 });
             });
+
         </script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            .Name{
+                display:block;
+                color:#040000;
+                font-family: 'Courier New', Courier, monospace;
+                font-size:x-large;
+                padding-top: 10px;
+                text-align: center;
+            }
+            .Description{
+                display:block;
+                color:#888888;
+                text-align: center;
+            }
+        </style>
     </head>
     <body>
-        <div id="result"></div>
-        <button type="button" id="button">
-            get data
-        </button>
-    </body>    
+        <div id="result"> </div>
+        <button type="button" id="button">Get Data</button>
+    </body>
 </html>
