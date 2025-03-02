@@ -3,73 +3,82 @@
     <head>
         <script>
             var products = {
-                "product": {
-                    "Category": [
-                        {
-                            "Name": "Pant",
-                            "Item": [
-                                {
-                                    "Name": "short",
-                                    "Description": "short pant",
-                                    "Price": "$20"
-                                },
-                                {
-                                    "Name": "Woman's Jean",
-                                    "Description": "Jean for woman",
-                                    "Price": "$60"
-                                },
-                                {
-                                    "Name": "Sweatpants",
-                                    "Description": "Comfy pants for relaxation",
-                                    "Price": "$45"
-                                }
-                            ]
-                        },
-                        {
-                            "Name": "T-Shirt",
-                            "Item": [
-                                {
-                                    "Name": "Dog T-Shirt",
-                                    "Description": "100% Cotton T-shirt size S-2XL",
-                                    "Price": "$20"
-                                },
-                                {
-                                    "Name": "Cat T-shirt",
-                                    "Description": "Cat theme T-shirt size S-2XL",
-                                    "Price": "$300"
-                                }
-                            ]
-                        },
-                        {
-                            "Name": "Jacket",
-                            "Item": [
-                                {
-                                    "Name": "Cat hoodie",
-                                    "Description": "Cat pattern hoodie size S-2XL",
-                                    "Price": "$70"
-                                },
-                                {
-                                    "Name": "Trench Coat",
-                                    "Description": "Long jacket",
-                                    "Price": "$300"
-                                },
-                                {
-                                    "Name": "Fleece Jacket",
-                                    "Description": "Warm heavy weight fleece jacket",
-                                    "Price": "$150"
-                                }
-                            ]
-                        }
-                    ]
-                }
-            };
+				"product": {
+					"Item": [
+						{
+							"Name": "Woman's Short",
+							"Description": "short pant for woman",
+							"Price": "$20",
+							"Category": "Pant"
+						},
+						{
+							"Name": "Woman's Jean",
+							"Description": "Jean for woman",
+							"Price": "$60",
+							"Category": "Pant"
+						},
+						{
+							"Name": "Sweatpants",
+							"Description": "Comfy pants for relaxation",
+							"Price": "$45",
+							"Category": [
+								"Pant",
+								"Winter Clothing"
+							]
+						},
+						{
+							"Name": "Ski Pant",
+							"Description": "Water proof pants for skiing",
+							"Price": "$150",
+							"Category": [
+								"Pant",
+								"Winter Clothing"
+							]
+						},
+						{
+							"Name": "Dog T-Shirt",
+							"Description": "100% Cotton T-shirt size S-2XL",
+							"Price": "$20",
+							"Category": "T-Shirt"
+						},
+						{
+							"Name": "Cat T-shirt",
+							"Description": "Cat theme T-shirt size S-2XL",
+							"Price": "$300",
+							"Category": "T-Shirt"
+						},
+						{
+							"Name": "Cat hoodie",
+							"Description": "Cat pattern hoodie size S-2XL",
+							"Price": "$70",
+							"Category": "Winter Clothing"
+						},
+						{
+							"Name": "Trench Coat",
+							"Description": "Long jacket",
+							"Price": "$300",
+							"Category": "Winter Clothing"
+						},
+						{
+							"Name": "Fleece Jacket",
+							"Description": "Warm heavy weight fleece jacket",
+							"Price": "$150",
+							"Category": "Winter Clothing"
+						}
+					]
+				}
+			};
             function display_json() {
                 document.write(JSON.stringify(products));
-            }    
+            }     
+
         </script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+
+        </style>
     </head>
     <body>
         <script> display_json(); </script>
-    </body>    
-    
+    </body>
 </html>
