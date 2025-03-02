@@ -50,8 +50,6 @@
                         $.get('products.json', function(data) {
                             processJson(data);
 
-
-                            // You can further process the data here, e.g., display it on the page
                             $('#result').html(data); 
                         }, 'json');
 
