@@ -1,12 +1,24 @@
 
 Category{
-    display:block;
-    color:#888888;
-    font-family: 'Courier New', Courier, monospace;
-    padding-top: 10px;
-    text-align: center;
- }
- Item{
-    display:block;
-    color:#888888;
- }
+   display:block;
+   color:#888888;
+   text-align: center;
+}
+Name{
+   display:block;
+   color:#040000;
+   font-family: 'Courier New', Courier, monospace;
+   font-size:x-large;
+   padding-top: 10px;
+   text-align: center;
+}
+Description{
+  display:block;
+  color:#888888;
+  text-align: center;
+}
+Price{
+  display:block;
+  color:#888888;
+  text-align: center;
+}
