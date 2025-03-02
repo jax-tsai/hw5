@@ -39,6 +39,7 @@
             function processJson(obj) {
                 console.log(obj);
                 var items = obj.product.Item;
+                console.log(items);
                 for (let i =0; i < items.length; i++) {
                     console.log(items[i]);
                     processItem(items[i]);
