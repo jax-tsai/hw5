@@ -13,7 +13,6 @@
                 return "";
             }
             function processLine(name, value) {
-                console.log("name:"+ name + " value:" + value);
                 var result = document.getElementById("result");
                 var newDiv = document.createElement('div');
                 newDiv.classList.add(name == 'Name'? 'Name': "Description");
@@ -31,7 +30,6 @@
             }
 
             function processItem(item) {
-                console.log("processItem:" + item);
                 var result = document.getElementById("result");
                 const keys = Object.keys(item);
                 console.log(keys);
@@ -40,9 +38,7 @@
                 }
             }
             function processJson(obj) {
-                console.log(typeof obj);
                 var items = obj.product.Item;
-                console.log(items);
                 for (let i =0; i < items.length; i++) {
                     processItem(items[i]);
                 }
@@ -53,7 +49,6 @@
                 $('#button').on('click', function() {
 
                         $.get('products.json', function(data) {
-                            console.log(data);
                             processJson(data);
                         }, 'json');
 
