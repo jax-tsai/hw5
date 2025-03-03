@@ -38,6 +38,7 @@
                 }
             }
             function processJson(obj) {
+                document.getElementById("result").innerHTML = "";
                 var items = obj.product.Item;
                 for (let i =0; i < items.length; i++) {
                     processItem(items[i]);
