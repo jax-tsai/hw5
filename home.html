@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html>
+
+    <head>
+        
+        <script>
+            function getQuote() {
+                document.getElementById('theForm').submit();
+            }
+        </script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+
+        </style>
+    </head>
+    <body>
+        <form action="/process" id="theForm" method="get">
+            <input type="radio" id="ticker" name="selectType" value="ticker" checked="checked">
+            <label for="ticker">Ticker Symbol</label><br>
+            <input type="radio" id="company" name="selectType" value="company">
+            <label for="company">Company name</label><br>            
+            <label for="symbol">Enter stock company name or ticker:</label><br>
+            <input type="text" id="symbol" name="symbol"><br>
+            <input type="submit" value="Submit">
+
+        </form>
+    </body>
+</html>
