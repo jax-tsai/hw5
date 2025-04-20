@@ -83,7 +83,7 @@ app.get('/process', (req, res) => {
 app.get('/', (req, res) => {
   const formData = req.body;
   res.writeHead(200, {'Content-Type': 'text/html'});
-  fs.createReadStream(req.url.replace('/','')).pipe(res);
+  fs.createReadStream('home.html').pipe(res);
 });
 
 app.get('/home.html', (req, res) => {
