@@ -4,7 +4,7 @@ var express = require('express');
 const { MongoClient } = require('mongodb');
 var path = require('path');
 const app = express();
-const port = 8080;
+const port = process.env.PORT || 8080;
 
 async function fetchStock(res, selectType, symbol) {
     const uri = "mongodb+srv://jaxtsai:Mongo123@cluster0.3sm3y1e.mongodb.net/?appName=Cluster0";        
@@ -92,6 +92,6 @@ app.get('/home.html', (req, res) => {
   fs.createReadStream(req.url.replace('/','')).pipe(res);
 });
 
-app.listen(8080, () => {
-  console.log('Server listening on port 8080');
+app.listen(port, () => {
+  console.log('Server listening on port ' + port);
 });
