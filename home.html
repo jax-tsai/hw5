@@ -5,8 +5,16 @@
     <head>
         
         <script>
-            function getQuote() {
-                document.getElementById('theForm').submit();
+            function getQuote(clicked_id) {
+                const form = document.getElementById("theForm");
+                if (clicked_id == "submit") {
+                    console.log(clicked_id);
+                    form.action = "/process";
+                } else {
+                    console.log(clicked_id);
+                    form.action = "/processAPI";
+                }
+                //form.submit();
             }
         </script>
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,9 +29,11 @@
             <input type="radio" id="company" name="selectType" value="company">
             <label for="company">Company name</label><br>            
             <label for="symbol">Enter stock company name or ticker:</label><br>
-            <input type="text" id="symbol" name="symbol"><br>
-            <input type="submit" value="Submit">
+            <input type="text" id="symbol" name="symbol"><br><br>
+            <input type="submit" id="submit"  onClick="getQuote(this.id)" value="Submit"><br><br>
+            <input type="submit" id="submitAPI" onClick="getQuote(this.id)" value="Submit To AlphaVantageAPI">            
 
         </form>
     </body>
 </html>
+
